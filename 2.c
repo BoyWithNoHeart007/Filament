@@ -1,35 +1,34 @@
-#include<stdio.h>
 #include<string.h>
+#include<stdio.h>
 
 main(){
       
     char a[100];
-    int i, n;
-    int z = 0;
+    int i;// n;
+    int z;
+    
     
     printf("Enter a string:");
-    scanf("%s", a);
+    scanf("%s", a);  //ravi
     
-    n = strlen(a);
+    z = strrev(a);
+
     
-    for(i=0; i<n; i++){
-        
-		if(a[i] != a[n-i-1]){
-          
-		    z = 1;
-            
-           }
-        }
+//    printf("%s",z);
     
-    if (z) {
-       
-	    printf("%s is not a palindrome", a);
+    i = strcmp(z,a);
     
-	}    
-    else {
-     
-	    printf("%s is palindrome", a);
-    
+    if(i == 0){
+    	
+    	printf("%s is palindrome", a);
+    	
 	}
+	
+	else{
+		
+		printf("%s is not a palindrome", a);
+		
+	}
+
  
 }
