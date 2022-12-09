@@ -5,17 +5,17 @@ main(){
       
     char a[100];
     int i;// n;
-    int z;
+    int z[100];
     
     
     printf("Enter a string:");
-    scanf("%s", a);  //ravi
+    scanf("%s", a);
     
-    z = strrev(a);
+    strcpy(z,a);
+    
+    strrev(z);
 
-    
-//    printf("%s",z);
-    
+   
     i = strcmp(z,a);
     
     if(i == 0){
